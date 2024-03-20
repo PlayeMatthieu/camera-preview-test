@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'be.playe.cameraPreview',
   appName: 'camera-preview',
   webDir: 'www',
   server: {

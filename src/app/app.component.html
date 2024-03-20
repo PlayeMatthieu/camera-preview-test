@@ -1,3 +1,7 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet *ngIf="!cameraService.cameraActive()"></ion-router-outlet>
+  <div class="camera" *ngIf="cameraService.cameraActive()">
+    <ion-button (click)="capture()">Cheese</ion-button>
+    <ion-button (click)="stopCamera()">stop</ion-button>
+  </div>
 </ion-app>
